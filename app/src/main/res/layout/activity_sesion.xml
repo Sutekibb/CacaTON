@@ -50,26 +50,26 @@
             android:textSize="34sp" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress2"
+            android:id="@+id/usuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:ems="10"
             android:gravity="center_horizontal"
-            android:inputType="textEmailAddress"
-            android:text="E-MAIL"
+            android:hint="Usuario"
+            android:inputType="text"
             android:textAlignment="center"
             android:textColor="#7A000000" />
 
         <EditText
-            android:id="@+id/editTextTextPassword3"
+            android:id="@+id/password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:ems="10"
             android:gravity="center"
+            android:hint="contraseña"
             android:inputType="textPassword"
-            android:text="contraseña"
             android:textAlignment="center"
             android:textColor="#8D000000" />
 
