@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/search_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawableStart="@drawable/chiquita"
+            android:hint="Buscar..."
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="272dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Bienvenido"
+            android:textSize="34sp" />
+
+        <ImageButton
+            android:id="@+id/my_image_button"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#235D87"
+            android:contentDescription="Botón de imagen"
+            android:padding="9dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-70dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/doc" />
+
+        <ImageButton
+            android:id="@+id/my_image_button"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-90dp"
+            android:layout_marginEnd="-70dp"
+            android:background="#235D87"
+            android:contentDescription="Botón de imagen"
+            android:padding="9dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/consulta" />
+
+
+
+        <ImageButton
+            android:id="@+id/my_image_button"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#235D87"
+            android:contentDescription="Botón de imagen"
+            android:padding="9dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-70dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/guardados" />
+
+        <ImageButton
+            android:id="@+id/my_image_button"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#235D87"
+            android:contentDescription="Botón de imagen"
+            android:padding="9dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:layout_marginEnd="-70dp"
+            android:layout_marginTop="-90dp"
+            android:src="@drawable/ajustes" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
