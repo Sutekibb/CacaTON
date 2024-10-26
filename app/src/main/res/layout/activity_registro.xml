@@ -50,49 +50,49 @@
             android:textSize="34sp" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress2"
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:ems="10"
             android:gravity="center_horizontal"
-            android:inputType="textEmailAddress"
             android:hint="Nombre"
+            android:inputType="text"
             android:textAlignment="center"
             android:textColor="#7A000000" />
 
         <EditText
-            android:id="@+id/editTextTextPassword3"
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="#8D000000" />
+
+        <EditText
+            android:id="@+id/Password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:ems="10"
             android:gravity="center"
             android:inputType="textPassword"
-            android:hint="E-mail"
-            android:textAlignment="center"
-            android:textColor="#8D000000" />
-
-        <EditText
-            android:id="@+id/editTextTextPassword3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="text"
             android:hint="Contraseña"
             android:text=""
             android:textAlignment="center"
             android:textColor="#8D000000" />
         <EditText
-            android:id="@+id/editTextTextPassword3"
+            android:id="@+id/PasswordRepeated"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:ems="10"
             android:gravity="center"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:hint="Confirmar contraseña"
             android:text=""
             android:textAlignment="center"
