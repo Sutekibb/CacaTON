@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nubes3"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="304dp"
+        android:layout_height="615dp"
+        android:layout_marginStart="-25dp"
+        android:layout_marginTop="-650dp"
+        android:layout_marginEnd="-35dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="732dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="272dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Cálculo de Interés por Mora"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/monto"
+            android:layout_width="272dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Monto Principal"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Ingresa el monto"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#7A000000" />
+
+        <TextView
+            android:id="@+id/tasa"
+            android:layout_width="272dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Tasa de interés"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/interes_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Ingresa la tasa de interés"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#8D000000" />
+
+        <TextView
+            android:id="@+id/late"
+            android:layout_width="272dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Días de atraso"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Ingresa los días"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#8D000000" />
+
+        <Button
+            android:id="@+id/button_result"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#235D87"
+            android:text="Calcular" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="272dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
