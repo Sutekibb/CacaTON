@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Menu extends AppCompatActivity implements View.OnClickListener {
 
-    private ImageButton calculadora;
+    private ImageButton calculadora, videos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,10 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_menu);
 
         calculadora = (ImageButton) findViewById(R.id.calculator_button);
+        videos = (ImageButton) findViewById(R.id.button_documents);
         calculadora.setOnClickListener(this);
+        videos.setOnClickListener(this);
+
     }
 
     @Override
@@ -25,6 +28,9 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
         if (view.getId() == R.id.calculator_button) {
             Intent intentCalculadora = new Intent(Menu.this, Calculator.class);
             startActivity(intentCalculadora);
+        } else if (view.getId() == R.id.button_documents){
+            Intent intentDocuments = new Intent(Menu.this, Videos.class);
+            startActivity(intentDocuments);
         }
     }
 }

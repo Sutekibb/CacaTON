@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/videos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/encabezado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawableStart="@drawable/chiquita"
+            android:hint="Documentación" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="272dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Videos y documentación"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/Pymes"
+            android:layout_width="272dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Qué son las PyMEs"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/PymesInfo"
+            android:layout_width="360dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            android:text="Las Pequeñas y Medianas Empresas (PyMEs) son un tipo de organización que desempeña un papel fundamental en las economías de muchos países, especialmente en México. Estas empresas suelen definirse por su número de empleados, ingresos anuales y en algunos casos, por el sector en el que operan. En México, las PyMEs representan más del 95% del total de las empresas del país, generan aproximadamente el 70% del empleo y contribuyen con cerca del 52% del Producto Interno Bruto (PIB), lo cual subraya su importancia económica y social."
+            android:textSize="15dp"/>
+
+        <VideoView
+            android:id="@+id/videopymes"
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
