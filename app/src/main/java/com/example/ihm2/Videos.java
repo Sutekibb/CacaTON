@@ -16,7 +16,7 @@ public class Videos extends AppCompatActivity {
         setContentView(R.layout.activity_videos);
         pymes = (VideoView) findViewById(R.id.videopymes);
 
-        String pymespath = "android.resource://"+getPackageName() + "/" + R.raw.videopymes;
+        String pymespath = "android.resource://"+getPackageName() + "/" + R.raw.video;
         Uri uri = Uri.parse(pymespath);
         pymes.setVideoURI(uri);
 
