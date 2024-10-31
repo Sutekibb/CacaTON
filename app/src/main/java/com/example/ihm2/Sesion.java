@@ -36,21 +36,22 @@ public class Sesion extends AppCompatActivity implements View.OnClickListener {
         String user = usuario.getText().toString();
         String pass = contraseña.getText().toString();
 
-        // Verificamos cuál botón fue presionado
         if (view.getId() == R.id.button_registrarse) {
-            // Si el botón de "Registrarse" fue presionado
             Intent intentRegistro = new Intent(Sesion.this, Registro.class);
             startActivity(intentRegistro);
         }
+        else if (view.getId() == R.id.button_entrar) {
+            DB db = new DB(getApplicationContext(), null, null, 1);
+            String[] datosUsuario = db.search_reg(user);
 
-        else if (view.getId() == R.id.button_entrar && user.equals("Usuario")  && pass.equals("Contra")) {
-            Toast.makeText(this, "Credenciales correctas", Toast.LENGTH_SHORT).show();
-            // Si el botón de "Entrar" fue presionado
-            Intent intentMenu = new Intent(Sesion.this, Menu.class);
-            startActivity(intentMenu);
-        }
-        else {
-            Toast.makeText(this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show();
+            if (datosUsuario[2].equals("Encontrado") && datosUsuario[1].equals(pass)) {
+                Toast.makeText(this, "Credenciales correctas", Toast.LENGTH_SHORT).show();
+                Intent intentMenu = new Intent(Sesion.this, Menu.class);
+                startActivity(intentMenu);
+            } else {
+                Toast.makeText(this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show();
+            }
         }
     }
+
 }

@@ -1,5 +1,6 @@
 package com.example.ihm2;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -14,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Menu extends AppCompatActivity implements View.OnClickListener {
 
-    private ImageButton calculadora, videos, reports;
+    private ImageButton calculadora, videos, reports, config;
     private EditText busqueda;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +26,11 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
         videos = (ImageButton) findViewById(R.id.button_documents);
         reports = (ImageButton) findViewById(R.id.button_reports);
         busqueda = (EditText) findViewById(R.id.search_box);
+        config = (ImageButton) findViewById(R.id.button_config);
         reports.setOnClickListener(this);
         calculadora.setOnClickListener(this);
         videos.setOnClickListener(this);
+        config.setOnClickListener(this);
 
         // Agregar listener para detectar "Enter" en el teclado
         busqueda.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -58,6 +61,10 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
         else if (view.getId() == R.id.button_reports){
             Intent intentReports = new Intent(Menu.this, Reports.class);
             startActivity(intentReports);
+        }
+        else if (view.getId() == R.id.button_config){
+            Intent intentConfig = new Intent(Menu.this, Buscar_Eliminar_Actualizar.class);
+            startActivity(intentConfig);
         }
     }
 
